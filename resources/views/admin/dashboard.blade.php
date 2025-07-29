@@ -1,0 +1,8 @@
+@extends('layouts.admin')
+
+@section('admin_content')
+<div class="container mx-auto py-8">
+    <h1 class="text-2xl font-bold mb-4">Dashboard Admin</h1>
+    <p>Bienvenue sur le tableau de bord administrateur.</p>
+</div>
+@endsection
