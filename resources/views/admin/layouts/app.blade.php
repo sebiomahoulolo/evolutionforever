@@ -1,17 +1,13 @@
-@extends('layouts.admin')
-
-@section('admin_content')
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard Admin</title>
+    <title>@yield('title', 'Admin')</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Custom CSS -->
     <style>
         :root {
             --primary-blue: #1a73e8;
@@ -84,7 +80,7 @@
         /* Main Content */
         .main-content {
             margin-left: 250px;
-            
+            padding: 20px;
             transition: all 0.3s;
         }
         
@@ -351,77 +347,13 @@
         <i class="fas fa-bars"></i>
     </button>
 
-    @include('admin.partials.sidebar')
-
-        <div class="row mt-4">
-            @include('admin.partials.properties')
-        </div>
-        
-        <div class="row mt-4">
-            <!-- Recent Activities -->
-            @include('admin.partials.activities')
-            </div>
-             
-        <!-- Recent Properties -->
-        <div class="row mt-4">
-            <div class="col-12">
-                <div class="card">
-                    <div class="card-header">
-                        Dernières Propriétés Ajoutées
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>ID</th>
-                                        <th>Adresse</th>
-                                        <th>Type</th>
-                                        <th>Prix</th>
-                                        <th>Statut</th>
-                                        <th>Actions</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>#PROP-012</td>
-                                        <td>12 Rue des Lilas, Paris</td>
-                                        <td>Appartement T3</td>
-                                        <td>950€/mois</td>
-                                        <td><span class="badge-green">Disponible</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>#PROP-011</td>
-                                        <td>45 Avenue Montaigne, Lyon</td>
-                                        <td>Maison 4 pièces</td>
-                                        <td>1,200€/mois</td>
-                                        <td><span class="badge-blue">Loué</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>#PROP-010</td>
-                                        <td>8 Boulevard Voltaire, Marseille</td>
-                                        <td>Studio</td>
-                                        <td>650€/mois</td>
-                                        <td><span class="badge-green">Disponible</span></td>
-                                        <td>
-                                            <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="d-flex">
+        @include('admin.partials.sidebar')
+        <div class="main-content w-100">
+            @yield('content')
         </div>
     </div>
-    
+
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
@@ -452,4 +384,3 @@
     </script>
 </body>
 </html>
-@endsection

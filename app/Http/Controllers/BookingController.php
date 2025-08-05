@@ -61,4 +61,13 @@ class BookingController extends Controller
     {
         //
     }
+    /**
+     * Affiche la page des réservations immobilières pour l'admin.
+     */
+    public function immo()
+    {
+        // Récupère tous les biens immobiliers
+        $bienimmos = \App\Models\BienImmo::all();
+        return view('admin.bookings.immo', compact('bienimmos'));
+    }
 }

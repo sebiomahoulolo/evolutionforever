@@ -45,4 +45,15 @@ class User extends Authenticatable
             'password' => 'hashed',
         ];
     }
+    /**
+     * Vérifie si l'utilisateur est admin.
+     */
+    public function isAdmin()
+    {
+        return $this->role === 'admin';
+    }
+    // app/Models/User.php
+protected $casts = [
+    'is_admin' => 'boolean'
+];
 }
