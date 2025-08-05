@@ -1,0 +1,6 @@
+<!-- Stats Cards -->
+<div class="row">
+    ...
+    <!-- Copiez ici le contenu des stats cards du dashboard -->
+    ...
+</div>
