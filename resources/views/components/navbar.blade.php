@@ -41,15 +41,15 @@
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto py-0">
                     <a href="{{ route('welcome') }}" class="nav-item nav-link active">Accueil</a>
-                    <a href="{{ route('pages.propos') }}" class="nav-item nav-link">Immobilier</a>
-                    <a href="{{ route('pages.propos') }}" class="nav-item nav-link">Evenementiel</a>
-                    <a href="{{ route('pages.propos') }}" class="nav-item nav-link">Voitures</a>
+                    <a href="{{ route('pages.immobilier') }}" class="nav-item nav-link">Immobilier</a>
+                    <a href="{{ route('pages.even') }}" class="nav-item nav-link">Evenementiel</a>
+                    <a href="{{ route('pages.voiture') }}" class="nav-item nav-link">Voitures</a>
                     <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
                         <div class="dropdown-menu m-0">
-                            <a href="{{ route('pages.blog') }}" class="dropdown-item">Pressing</a>
-                            <a href="{{ route('pages.detail') }}" class="dropdown-item">Déménagement</a>
-                            <a href="{{ route('pages.detail') }}" class="dropdown-item">Produit SOBEBRA</a>
+                            <a href="{{ route('pages.pressing') }}" class="dropdown-item">Pressing</a>
+                            <a href="{{ route('pages.demenagement') }}" class="dropdown-item">Déménagement</a>
+                            <a href="{{ route('pages.produit') }}" class="dropdown-item">Produit SOBEBRA</a>
 
                         </div>
                     </div>
