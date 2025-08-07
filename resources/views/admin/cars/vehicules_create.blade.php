@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-<div class="container ">
+<div class="container " style="margin-left: -23%">
     <h2>Ajouter un Véhicule</h2>
     <form action="{{ route('admin.cars.store') }}" method="POST" enctype="multipart/form-data">
         @csrf

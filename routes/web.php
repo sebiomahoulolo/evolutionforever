@@ -10,6 +10,9 @@ use App\Http\Controllers\CarController;
 use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\BookingController; 
 use App\Http\Controllers\BienImmoController;
+
+// Route de réservation publique
+Route::post('/reservation', [\App\Http\Controllers\Admin\ReservationController::class, 'store'])->name('reservation.store');
 use App\Http\Controllers\EventController;
 // Routes publiques
 Route::get('/', function () {
@@ -26,7 +29,10 @@ Route::get('/team', [PagesController::class, 'team'])->name('pages.team');
 Route::get('/testimonial', [PagesController::class, 'testimonial'])->name('pages.testimonial');
 Route::get('/quote', [PagesController::class, 'quote'])->name('pages.quote');
 Route::get('/contact', [PagesController::class, 'contact'])->name('pages.contact');
-
+Route::get('/immo', [PagesController::class, 'immo'])->name('pages.immo');
+Route::get('/vehicule', [PagesController::class, 'vehicule'])->name('pages.vehicule');
+Route::get('/events', [PagesController::class, 'events'])->name('pages.events');
+        Route::get('/bien/{id}', [\App\Http\Controllers\PagesController::class, 'bienDetail'])->name('pages.bien-detail');
 // Routes client (authentifié et vérifié)
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [ClientController::class, 'dashboard'])->name('dashboard');
@@ -44,6 +50,9 @@ Route::middleware(['auth', 'admin'])->prefix('admin')->name('admin.')->group(fun
 
     // Add missing bookings.immo route for admin
     Route::get('bookings/immo', [BookingController::class, 'immo'])->name('bookings.immo');
+
+    // Réservations
+    Route::get('reservations', [\App\Http\Controllers\Admin\ReservationController::class, 'index'])->name('reservations.index');
 
 });
 

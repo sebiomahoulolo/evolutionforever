@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-<div class="container mt-4">
+<div class="container mt-4" style="margin-left: -23%">
     <h2>Liste des événements</h2>
     <a href="{{ route('admin.events.create') }}" class="btn btn-primary mb-3">Ajouter un événement</a>
     <table class="table table-bordered">

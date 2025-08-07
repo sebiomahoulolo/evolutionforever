@@ -1,7 +1,7 @@
 @extends('admin.layouts.app')
 
 @section('content')
-<div class="container mt-4">
+<div class="container mt-4" style="margin-left: -23%">
     <h2>Modifier l'événement</h2>
     <form action="{{ route('admin.events.update', $event->id) }}" method="POST" enctype="multipart/form-data">
         @csrf

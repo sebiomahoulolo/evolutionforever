@@ -33,12 +33,12 @@
         Propriétés et Contrats
     </a>
 </li>
-                            {{-- <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
+                         <li class="sidebar-nav-item">
+                                <a href="{{ route('admin.reservations.index') }}" class="sidebar-nav-link">
                                     <i class="fas fa-file-contract"></i>
-                                    Contrats
+                                    Réservations
                                 </a>
-                            </li> --}}
+                            </li> 
                             {{-- <li class="sidebar-nav-item">
                                 <a href="#" class="sidebar-nav-link">
                                     <i class="fas fa-money-bill-wave"></i>
