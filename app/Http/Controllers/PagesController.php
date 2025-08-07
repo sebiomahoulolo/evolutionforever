@@ -9,7 +9,7 @@ class PagesController extends Controller
     public function welcome() { return view('welcome'); }
     public function about() { return view('pages.propos'); }
     public function service() { return view('pages.service'); }
-    public function blog() { return view('pages.blog'); }
+    public function immobilier() { return view('pages.immobilier'); }
     public function detail() { return view('pages.detail'); }
     public function price() { return view('pages.price'); }
     public function feature() { return view('pages.feature'); }
@@ -46,4 +46,10 @@ class PagesController extends Controller
             ->get();
         return view('pages.bien-detail', compact('bien', 'suggestions'));
     }
+    public function voiture() { return view('pages.voiture'); }
+    public function even() { return view('pages.even'); }
+    public function pressing() { return view('pages.pressing'); }
+    public function demenagement() { return view('pages.demenagement'); }
+    public function produit() { return view('pages.produit'); }
+
 }

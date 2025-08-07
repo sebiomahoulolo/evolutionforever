@@ -48,28 +48,25 @@
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Quick Links</h3>
+                                <h3 class="text-light mb-0">Liens Rapides</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="pages.welcom"><i class="bi bi-arrow-right text-primary me-2"></i>Accueil</a>
+                                <a class="text-light mb-2" href="pages.propos"><i class="bi bi-arrow-right text-primary me-2"></i>A propos</a>
+                                <a class="text-light mb-2" href="pages.immobilier"><i class="bi bi-arrow-right text-primary me-2"></i>Immobilier</a>
+                                <a class="text-light mb-2" href="pages.even"><i class="bi bi-arrow-right text-primary me-2"></i>Evenementiel</a>
+                                <a class="text-light mb-2" href="pages.voiture"><i class="bi bi-arrow-right text-primary me-2"></i>Voiture</a>
+                                <a class="text-light" href="pages.contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
                             <div class="section-title section-title-sm position-relative pb-3 mb-4">
-                                <h3 class="text-light mb-0">Popular Links</h3>
+                                <h3 class="text-light mb-0">Autres liens</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Meet The Team</a>
-                                <a class="text-light mb-2" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Latest Blog</a>
-                                <a class="text-light" href="#"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                                <a class="text-light mb-2" href="pages.pressing"><i class="bi bi-arrow-right text-primary me-2"></i>Pressing</a>
+                                <a class="text-light mb-2" href="pages.demenagement"><i class="bi bi-arrow-right text-primary me-2"></i>Déménagement</a>
+                                <a class="text-light mb-2" href="pages.produit"><i class="bi bi-arrow-right text-primary me-2"></i>Produits SOBEBRA</a>
                             </div>
                         </div>
                     </div>
@@ -82,7 +79,7 @@
             <div class="row justify-content-end">
                 <div class="col-lg-8 col-md-6">
                     <div class="d-flex align-items-center justify-content-center" style="height: 75px;">
-                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Your Site Name</a>. All Rights Reserved.
+                        <p class="mb-0">&copy; <a class="text-white border-bottom" href="pages.welcome">Evolution Forever</a>. Tout droits réservés.
 
 						<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
 				</div>

@@ -8,7 +8,7 @@ use App\Http\Controllers\ClientController;
 use App\Http\Controllers\PropertyController;
 use App\Http\Controllers\CarController;
 use App\Http\Controllers\ServiceController;
-use App\Http\Controllers\BookingController; 
+use App\Http\Controllers\BookingController;
 use App\Http\Controllers\BienImmoController;
 
 // Route de réservation publique
@@ -21,18 +21,18 @@ Route::get('/', function () {
 Route::get('/welcome', [PagesController::class, 'welcome'])->name('welcome');
 Route::get('/about', [PagesController::class, 'about'])->name('pages.propos');
 Route::get('/service', [PagesController::class, 'service'])->name('pages.service');
-Route::get('/blog', [PagesController::class, 'blog'])->name('pages.blog');
+Route::get('/immobilier', [PagesController::class, 'immobilier'])->name('pages.immobilier');
 Route::get('/detail', [PagesController::class, 'detail'])->name('pages.detail');
 Route::get('/price', [PagesController::class, 'price'])->name('pages.price');
-Route::get('/feature', [PagesController::class, 'feature'])->name('pages.feature');
-Route::get('/team', [PagesController::class, 'team'])->name('pages.team');
+Route::get('/voiture', [PagesController::class, 'voiture'])->name('pages.voiture');
+Route::get('/even', [PagesController::class, 'even'])->name('pages.even');
 Route::get('/testimonial', [PagesController::class, 'testimonial'])->name('pages.testimonial');
 Route::get('/quote', [PagesController::class, 'quote'])->name('pages.quote');
 Route::get('/contact', [PagesController::class, 'contact'])->name('pages.contact');
-Route::get('/immo', [PagesController::class, 'immo'])->name('pages.immo');
-Route::get('/vehicule', [PagesController::class, 'vehicule'])->name('pages.vehicule');
-Route::get('/events', [PagesController::class, 'events'])->name('pages.events');
-        Route::get('/bien/{id}', [\App\Http\Controllers\PagesController::class, 'bienDetail'])->name('pages.bien-detail');
+Route::get('/pressing', [PagesController::class, 'pressing'])->name('pages.pressing');
+Route::get('/demenagement', [PagesController::class, 'demenagement'])->name('pages.demenagement');
+Route::get('/produit', [PagesController::class, 'produit'])->name('pages.produit');
+
 // Routes client (authentifié et vérifié)
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::get('/dashboard', [ClientController::class, 'dashboard'])->name('dashboard');
@@ -67,7 +67,7 @@ Route::middleware(['auth', \App\Http\Middleware\EnsureIsAdmin::class]) // Réfé
      // routes/web.php
 Route::middleware(['auth'])->group(function () {
     // ... vos autres routes ...
-    
+
     // Ajoutez ces routes pour le profil utilisateur
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
