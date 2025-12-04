@@ -14,6 +14,9 @@ return new class extends Migration {
             $table->string('immatriculation');
             $table->json('photos')->nullable();
             $table->string('statut')->default('Disponible');
+            $table->integer('prix')->nullable();
+            $table->string('type')->nullable();
+            $table->string('adresse')->nullable();
             $table->timestamps();
         });
     }

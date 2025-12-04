@@ -363,7 +363,7 @@
             </div>
              
         <!-- Recent Properties -->
-        <div class="row mt-4">
+         {{--<div class="row mt-4">
             <div class="col-12">
                 <div class="card">
                     <div class="card-header">
@@ -391,27 +391,27 @@
                                         <td><span class="badge-green">Disponible</span></td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
+                                        </td> --}}
                                     </tr>
                                     <tr>
-                                        <td>#PROP-011</td>
+                                        {{-- <td>#PROP-011</td>
                                         <td>45 Avenue Montaigne, Lyon</td>
                                         <td>Maison 4 pièces</td>
                                         <td>1,200€/mois</td>
                                         <td><span class="badge-blue">Loué</span></td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
+                                        </td> --}}
                                     </tr>
                                     <tr>
-                                        <td>#PROP-010</td>
+                                        {{-- <td>#PROP-010</td>
                                         <td>8 Boulevard Voltaire, Marseille</td>
                                         <td>Studio</td>
                                         <td>650€/mois</td>
                                         <td><span class="badge-green">Disponible</span></td>
                                         <td>
                                             <button class="btn btn-sm btn-outline-primary">Voir</button>
-                                        </td>
+                                        </td> 
                                     </tr>
                                 </tbody>
                             </table>
@@ -421,7 +421,7 @@
             </div>
         </div>
     </div>
-    
+    --}}
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     

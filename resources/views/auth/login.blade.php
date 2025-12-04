@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Évolution Forever</title>
+        <link rel="icon" href="/img/logo.png" type="image/png">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
@@ -57,6 +59,7 @@
 <body>
     <div class="container">
         <div class="login-container">
+            
             <div class="login-header">
                 <h2><i class="fas fa-sign-in-alt me-2"></i>Connexion Évolution Forever adaministrateur</h2>
             </div>
@@ -112,7 +115,6 @@
                             <div class="text-danger mt-2">{{ $message }}</div>
                         @enderror
                     </div>
-
                     <!-- Remember Me -->
                     <div class="mb-4 form-check">
                         <input
@@ -125,6 +127,7 @@
                             Se souvenir de moi
                         </label>
                     </div>
+<a href="{{ route('register') }}"> Créé un compte</a>
 
                     <!-- Actions -->
                     <div class="d-flex justify-content-between align-items-center">

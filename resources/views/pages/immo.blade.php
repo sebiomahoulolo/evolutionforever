@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Évolution Forever - Nos Biens Immobiliers</title>
+    <title>Évolution Forever</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Agence immobilière premium, propriétés de luxe, appartements, villas" name="keywords">
     <meta content="Découvrez notre sélection exclusive de biens immobiliers haut de gamme. Trouvez la propriété parfaite pour vos besoins." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">

@@ -8,10 +8,17 @@ use App\Models\Vehicule;
 
 class VehiculeController extends Controller
 {
-    public function index()
+    // public function index()
+    // {
+    //     $vehicules = Vehicule::all();
+    //     return view('admin.vehicules', compact('vehicules'));
+    // }
+    
+
+     public function index()
     {
-        $vehicules = Vehicule::all();
-        return view('admin.vehicules', compact('vehicules'));
+        $vehicules = Vehicule::latest()->get(); // Récupère toutes les lignes
+        return view('admin.cars.get_reservations', compact('vehicules'));
     }
 
     public function create()

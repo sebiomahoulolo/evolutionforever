@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Startup - Startup Website Template</title>
+    <title>Évolution Forever</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Free HTML Templates" name="keywords">
     <meta content="Free HTML Templates" name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -71,7 +72,7 @@
                         </div>
                         <div class="ps-4">
                             <h5 class="mb-2">Envoyez un e-mail pour obtenir un devis gratuit</h5>
-                            <h4 class="text-primary mb-0">Evolutionforever2024@gmail.com</h4>
+                            <h4 class="text-primary mb-0">adevolutionforever@gmail.com</h4>
                         </div>
                     </div>
                 </div>
@@ -111,7 +112,10 @@
                 </div>
                 <div class="col-lg-6 wow slideInUp" data-wow-delay="0.6s">
                     <iframe class="position-relative rounded w-100 h-100"
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3001156.4288297426!2d-78.01371936852176!3d42.72876761954724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4ccc4bf0f123a5a9%3A0xddcfc6c1de189567!2sNew%20York%2C%20USA!5e0!3m2!1sen!2sbd!4v1603794290143!5m2!1sen!2sbd"
+
+                    
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63427.23910658738!2d2.581100546083408!3d6.496034318707349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b5b0050833507%3A0x4658324c23bed571!2sComplexe%20Scolaire%20de%20Gbodje!5e0!3m2!1sfr!2sbj!4v1755882557023!5m2!1sfr!2sbj"
+                        
                         frameborder="0" style="min-height: 350px; border:0;" allowfullscreen="" aria-hidden="false"
                         tabindex="0"></iframe>
                 </div>

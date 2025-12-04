@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Service de Pressing & Blanchisserie - Votre Entreprise Immobilière</title>
+    <title>Évolution Forever</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="Service de pressing, blanchisserie, nettoyage à sec" name="keywords">
     <meta content="Découvrez notre service de pressing et blanchisserie haut de gamme pour prendre soin de vos vêtements et votre linge de maison." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -173,30 +174,65 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Sélectionnez un Service</option>
-                                        <option value="1">Nettoyage à Sec</option>
-                                        <option value="2">Blanchisserie</option>
-                                        <option value="3">Tissus Délicats</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Demander un Devis</button>
-                                </div>
-                            </div>
-                        </form>
+                       <form action="{{ route('devis.store') }}" method="POST">
+    @csrf
+    <div class="row g-3">
+        <div class="col-xl-12">
+            <input type="text" name="nom" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;" required>
+        </div>
+
+        <div class="col-12">
+            <input type="email" name="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;" required>
+        </div>
+
+        <!-- Nouveau champ : Numéro de téléphone -->
+        <div class="col-12">
+            <input type="text" name="telephone" class="form-control bg-light border-0" placeholder="Votre Numéro de Téléphone" style="height: 55px;" required>
+        </div>
+
+        <div class="col-12">
+            <select name="service" class="form-select bg-light border-0" style="height: 55px;" required>
+                <option value="">Sélectionnez un Service</option>
+                <option value="Nettoyage à Sec">Nettoyage à Sec</option>
+                <option value="Blanchisserie">Blanchisserie</option>
+                <option value="Tissus Délicats">Tissus Délicats</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <input type="text" name="type_vetements" class="form-control bg-light border-0" placeholder="Type de vêtements / articles" style="height: 55px;" required>
+        </div>
+
+        <div class="col-12">
+            <input type="number" name="quantite" class="form-control bg-light border-0" placeholder="Quantité estimée" style="height: 55px;" required>
+        </div>
+
+        <div class="col-12">
+            <select name="livraison" class="form-select bg-light border-0" style="height: 55px;" required>
+                <option value="">Besoin de livraison / retrait à domicile ?</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <select name="frequence" class="form-select bg-light border-0" style="height: 55px;" required>
+                <option value="">Fréquence</option>
+                <option value="Ponctuel">Ponctuel</option>
+                <option value="Régulier">Régulier</option>
+            </select>
+        </div>
+
+        <div class="col-12">
+            <textarea name="message" class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
+        </div>
+
+        <div class="col-12">
+            <button class="btn btn-dark w-100 py-3" type="submit">Demander un Devis</button>
+        </div>
+    </div>
+</form>
+
                     </div>
                 </div>
             </div>

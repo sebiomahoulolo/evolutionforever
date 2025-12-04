@@ -9,6 +9,9 @@
                 <a href="{{ route('admin.cars.create') }}" class="btn btn-primary">
                     <i class="fas fa-plus-circle me-2"></i>Ajouter un véhicule
                 </a>
+                <a href="{{ route('admin.cars.get_reservations') }}" class="btn btn-primary">
+                    Voir les réservations
+                </a>
             </div>
         </div>
     </div>

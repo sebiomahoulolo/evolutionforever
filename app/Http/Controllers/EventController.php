@@ -48,6 +48,13 @@ class EventController extends Controller
         return view('admin.events.edit', compact('event'));
     }
 
+
+ public function show()
+    {
+        $events = Event::latest()->get(); // Récupère toutes les lignes
+        return view('admin.events.get_events', compact('events'));
+    }
+
     public function update(Request $request, Event $event)
     {
         $request->validate([

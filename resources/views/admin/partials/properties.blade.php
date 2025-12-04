@@ -39,7 +39,7 @@
                     <div class="card stat-card green">
                         <div class="card-body">
                             <i class="fas fa-dollar-sign"></i>
-                            <div class="stat-number">40</div>
+                            <div class="stat-number">0</div>
                             <div class="stat-title">Nombre de reservation</div>
                         </div>
                     </div>

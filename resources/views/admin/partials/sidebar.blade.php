@@ -7,7 +7,7 @@
             <div class="sidebar-brand">
                 <a href="{{ route('admin.dashboard') }}" class="text-decoration-none " style="color: bleu;">
                     <i class="fas fa-shield-alt me-2"></i>
-                    Évoluation Forever
+                    Évolution Forever
                 </a>
             </div>
             <ul class="sidebar-nav">
@@ -39,12 +39,7 @@
                                     Réservations
                                 </a>
                             </li> 
-                            {{-- <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
-                                    <i class="fas fa-money-bill-wave"></i>
-                                    Paiements
-                                </a>
-                            </li> --}}
+                      
                         </ul>
                     </div>
                 </li>
@@ -65,17 +60,11 @@
                                 </a>
                             </li>
                             {{-- <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
-                                    <i class="fas fa-paint-brush"></i>
-                                    Décoration
-                                </a>
-                            </li>
-                            <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
+                                 <a href="" class="sidebar-nav-link">
                                     <i class="fas fa-calendar-check"></i>
-                                    Événements
-                                </a>
-                            </li> --}}
+                                    Réservations
+                                </a>  --}}
+                                
                         </ul>
                     </div>
                 </li>
@@ -95,19 +84,20 @@
                                     Véhicules
                                 </a>
                             </li>
-                            <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
+                            {{-- <li class="sidebar-nav-item">
+                                    <a href="{{ route('admin.cars.get_reservations') }}" class="sidebar-nav-link">
+
                                     <i class="fas fa-clipboard-list"></i>
                                     Réservations
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </li>
                 
                 <!-- Pressing -->
                 <li class="sidebar-nav-item">
-                    <a href="#" class="sidebar-nav-link">
+                    <a href="{{ route('admin.pressing.get_pressing') }}" class="sidebar-nav-link">
                         <i class="fas fa-tshirt"></i>
                         Pressing
                     </a>
@@ -115,7 +105,7 @@
                 
                 <!-- SOBEBRA -->
                 <li class="sidebar-nav-item">
-                    <a href="#" class="sidebar-nav-link">
+                    <a href="{{ route('admin.sobebra.get_sobebra') }}" class="sidebar-nav-link">
                         <i class="fas fa-shopping-basket"></i>
                         SOBEBRA
                     </a>
@@ -123,7 +113,7 @@
                 
                 <!-- Déménagement -->
                 <li class="sidebar-nav-item">
-                    <a href="#" class="sidebar-nav-link">
+                    <a href="{{ route('admin.demenagement.get_demenage') }}" class="sidebar-nav-link">
                         <i class="fas fa-truck-moving"></i>
                         Déménagement
                     </a>
@@ -138,24 +128,17 @@
                     </a>
                     <div class="collapse" id="adminCollapse">
                         <ul class="sidebar-nav">
-                            {{-- <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
-                                    <i class="fas fa-users"></i>
-                                    Utilisateurs
-                                </a>
-                            </li>
+                            
+                          
                             <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
-                                    <i class="fas fa-chart-line"></i>
-                                    Statistiques
-                                </a>
-                            </li> --}}
-                            <li class="sidebar-nav-item">
-                                <a href="#" class="sidebar-nav-link">
-                                    <i class="fas fa-file-invoice-dollar"></i>
-                                    Facturation
-                                </a>
-                            </li>
+    <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+        @csrf
+        <button type="submit" class="sidebar-nav-link" style="background:none; border:none; color: rgb(236, 48, 48) ; cursor:pointer;">
+            <i class="fas fa-sign-out-alt"></i>
+            Déconnexion
+        </button>
+    </form>
+</li>
                         </ul>
                     </div>
                 </li>
@@ -168,6 +151,13 @@
             <!-- Header -->
             <div class="header">
                 <h1 class="header-title">Tableau de Bord</h1>
+               <form action="{{ route('logout') }}" method="POST" style="display: inline;">
+        @csrf
+        <button type="submit" class="sidebar-nav-link" style="background:none; border:none; color: rgb(236, 48, 48) ; cursor:pointer;">
+            <i class="fas fa-sign-out-alt"></i>
+            Déconnexion
+        </button>
+    </form>
                 <div class="user-profile" style="position:relative;">
                     <div class="user-avatar" id="userAvatar" style="cursor:pointer;" onclick="document.getElementById('userMenu').classList.toggle('show');">AD</div>
                     <div id="userMenu" class="dropdown-menu" style="position:absolute; right:0; top:40px; min-width:150px; display:none; background:#fff; border:1px solid #ddd; border-radius:6px; box-shadow:0 2px 8px rgba(0,0,0,0.1); z-index:1000;">
@@ -190,7 +180,7 @@
                     }
                 });
                 </script>
-            </div>
+            </div> 
 
 
 

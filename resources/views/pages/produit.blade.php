@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Nos Produits SOBEBRA - Fierté du Bénin</title>
+    <title>Évolution Forever</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="SOBEBRA, La Béninoise, Castel, Possotomè, Coca-Cola Bénin" name="keywords">
     <meta content="Découvrez la gamme complète des produits de la SOBEBRA, leader des boissons au Bénin. Bières, boissons gazeuses, eaux minérales et plus encore." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -70,7 +71,7 @@
                 <div class="col-lg-5  wow zoomIn" data-wow-delay="0.9s" style="min-height: 500px;">
                     <div class="position-relative h-100">
                         <!-- IMPORTANT: Remplacez cette image par une belle photo de produits SOBEBRA -->
-                        <img class="position-absolute w-100 h-80 rounded wow zoomIn" data-wow-delay="0.1s" src="img/sobebra.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-80 rounded wow zoomIn" data-wow-delay="0.1s" src="img/863343.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -187,34 +188,72 @@
                     </div>
                     <p class="mb-4">Vous êtes un grossiste, un gérant de bar, de restaurant ou un organisateur d'événements ? Rejoignez notre réseau de partenaires et bénéficiez de conditions avantageuses. Remplissez ce formulaire pour être contacté par notre équipe commerciale.</p>
                 </div>
-                <div class="col-lg-5">
-                    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Nom de votre entreprise/établissement" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre Nom Complet" style="height: 55px;">
-                                </div>
-                                 <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Objet de votre demande</option>
-                                        <option value="1">Devenir Distributeur</option>
-                                        <option value="2">Commande en Gros</option>
-                                        <option value="3">Sponsoring & Événementiel</option>
-                                        <option value="4">Autre Information</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Envoyer la Demande</button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
+<div class="col-lg-5">
+    <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
+
+<form action="{{ route('sobebra.store') }}" method="POST">
+    @csrf
+                <div class="row g-3">
+                <div class="col-xl-12">
+                    <input type="text" name="entreprise" class="form-control bg-light border-0" placeholder="Nom de votre entreprise/établissement" style="height: 55px;">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="nom_complet" class="form-control bg-light border-0" placeholder="Votre Nom Complet" style="height: 55px;">
+                </div>
+                <div class="col-12">
+                    <input type="email" name="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
+                </div>
+                <div class="col-12">
+    <input type="text" name="telephone" class="form-control bg-light border-0" placeholder="Votre Numéro de Téléphone" style="height: 55px;">
+</div>
+
+                <div class="col-12">
+                    <select name="objet" class="form-select bg-light border-0" style="height: 55px;">
+                        <option selected>Objet de votre demande</option>
+                        <option value="Devenir Distributeur">Devenir Distributeur</option>
+                        <option value="Commande en Gros">Commande en Gros</option>
+                        <option value="Sponsoring & Événementiel">Sponsoring & Événementiel</option>
+                        <option value="Autre Information">Autre Information</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <select name="type_boisson" class="form-select bg-light border-0" style="height: 55px;">
+                        <option selected>Type de boissons souhaitées</option>
+                        <option value="Jus">Jus</option>
+                        <option value="Eaux">Eaux</option>
+                        <option value="Sodas">Sodas</option>
+                        <option value="Bières">Bières</option>
+                        <option value="Spiritueux">Spiritueux</option>
+                        <option value="Autres">Autres</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <input type="text" name="quantite" class="form-control bg-light border-0" placeholder="Quantité estimée" style="height: 55px;">
+                </div>
+                <div class="col-12">
+                    <input type="text" name="adresse_livraison" class="form-control bg-light border-0" placeholder="Adresse de livraison" style="height: 55px;">
+                </div>
+                <div class="col-12">
+                    <select name="occasion" class="form-select bg-light border-0" style="height: 55px;">
+                        <option selected>Occasion</option>
+                        <option value="Personnel">Personnel</option>
+                        <option value="Événement">Événement</option>
+                        <option value="Entreprise">Entreprise</option>
+                    </select>
+                </div>
+                <div class="col-12">
+                    <input name="date_heure" type="datetime-local" class="form-control bg-light border-0" placeholder="Date & heure souhaitées" style="height: 55px;">
+                </div>
+                <div class="col-12">
+                    <textarea name="informations_complementaires" class="form-control bg-light border-0" rows="3" placeholder="Informations complémentaires"></textarea>
+                </div>
+                <div class="col-12">
+                    <button  class="btn btn-dark w-100 py-3" type="submit">Envoyer la Demande</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
                 </div>
             </div>
         </div>

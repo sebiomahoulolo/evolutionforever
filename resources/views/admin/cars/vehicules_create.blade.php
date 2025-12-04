@@ -6,7 +6,7 @@
     <form action="{{ route('admin.cars.store') }}" method="POST" enctype="multipart/form-data">
         @csrf
         <div class="mb-3">
-            <label for="images" class="form-label">Images (6 à 8 fichiers)</label>
+            <label for="images" class="form-label">Photos (6 à 8 fichiers)</label>
             <input type="file" class="form-control" id="images" name="images[]" accept="image/*" multiple required onchange="validateImages(this)">
             <small class="form-text text-muted">Sélectionnez entre 6 et 8 images.</small>
         </div>
@@ -29,12 +29,27 @@
             <input type="text" class="form-control" id="modele" name="modele" required>
         </div>
         <div class="mb-3">
+            <label for="annee" class="form-label">Année</label>
+            <input type="number" class="form-control" id="annee" name="annee" min="1900" max="2099" required>
+        </div>
+        <div class="mb-3">
             <label for="immatriculation" class="form-label">Immatriculation</label>
             <input type="text" class="form-control" id="immatriculation" name="immatriculation" required>
         </div>
         <div class="mb-3">
-            <label for="annee" class="form-label">Année</label>
-            <input type="number" class="form-control" id="annee" name="annee" min="1900" max="2099" required>
+            <label for="prix" class="form-label">Prix</label>
+            <input type="number" class="form-control" id="prix" name="prix" min="0" required>
+        </div>
+        <div class="mb-3">
+            <label for="type" class="form-label">Type</label>
+            <select class="form-control" id="type" name="type" required>
+                <option value="LOCATION">LOCATION</option>
+                <option value="VENTE">VENTE</option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="adresse" class="form-label">Adresse / Lieux</label>
+            <input type="text" class="form-control" id="adresse" name="adresse" required>
         </div>
         <div class="mb-3">
             <label for="statut" class="form-label">Statut</label>

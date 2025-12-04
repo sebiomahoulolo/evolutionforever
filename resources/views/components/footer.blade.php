@@ -28,17 +28,15 @@
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">Evolutionforever <br>
-                                    2024@gmail.com
+                                <p class="mb-0">adevolutionforever@gmail.com <br>
+                                    
                                 </p>
                             </div>
                             <div class="d-flex mb-2">
                                 <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0"></p>
+                                <p class="mb-0">2290147523655</p>
                             </div>
-                            <div class="d-flex mt-4">
-                                0147523655
-                            </div>
+                            
                             <div class="d-flex mb-2">
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
                                 <a class="btn btn-primary btn-square me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
@@ -51,12 +49,11 @@
                                 <h3 class="text-light mb-0">Liens Rapides</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="pages.welcom"><i class="bi bi-arrow-right text-primary me-2"></i>Accueil</a>
-                                <a class="text-light mb-2" href="pages.propos"><i class="bi bi-arrow-right text-primary me-2"></i>A propos</a>
-                                <a class="text-light mb-2" href="pages.immobilier"><i class="bi bi-arrow-right text-primary me-2"></i>Immobilier</a>
-                                <a class="text-light mb-2" href="pages.even"><i class="bi bi-arrow-right text-primary me-2"></i>Evenementiel</a>
-                                <a class="text-light mb-2" href="pages.voiture"><i class="bi bi-arrow-right text-primary me-2"></i>Voiture</a>
-                                <a class="text-light" href="pages.contact"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
+                                <a class="text-light mb-2" href="{{ route('pages.propos') }}"><i class="bi bi-arrow-right text-primary me-2"></i>A propos</a>
+                                <a class="text-light mb-2" href="{{ route('pages.immo') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Immobilier</a>
+                                <a class="text-light mb-2" href="{{ route('pages.evenments') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Evenementiel</a>
+                                <a class="text-light mb-2" href="{{ route('vehicule.index') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Voiture</a>
+                                <a class="text-light" href="{{ route('pages.contact') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Contact</a>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-12 pt-0 pt-lg-5 mb-5">
@@ -64,9 +61,9 @@
                                 <h3 class="text-light mb-0">Autres liens</h3>
                             </div>
                             <div class="link-animated d-flex flex-column justify-content-start">
-                                <a class="text-light mb-2" href="pages.pressing"><i class="bi bi-arrow-right text-primary me-2"></i>Pressing</a>
-                                <a class="text-light mb-2" href="pages.demenagement"><i class="bi bi-arrow-right text-primary me-2"></i>Déménagement</a>
-                                <a class="text-light mb-2" href="pages.produit"><i class="bi bi-arrow-right text-primary me-2"></i>Produits SOBEBRA</a>
+                                <a class="text-light mb-2" href="{{ route('pages.pressing') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Pressing</a>
+                                <a class="text-light mb-2" href="{{ route('pages.demenagement') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Déménagement</a>
+                                <a class="text-light mb-2" href=" {{ route('pages.produit') }}"><i class="bi bi-arrow-right text-primary me-2"></i>Produits SOBEBRA</a>
                             </div>
                         </div>
                     </div>

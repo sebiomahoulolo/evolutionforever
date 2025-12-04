@@ -1,11 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-
+ use App\Models\Event;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
+    public function vehiculeDetail($id) {
+        $vehicule = \App\Models\Vehicule::findOrFail($id);
+        return view('pages.vehicule.details', compact('vehicule'));
+    }
     public function welcome() { return view('welcome'); }
     public function about() { return view('pages.propos'); }
     public function service() { return view('pages.service'); }
@@ -13,6 +17,14 @@ class PagesController extends Controller
     public function detail() { return view('pages.detail'); }
     public function price() { return view('pages.price'); }
     public function feature() { return view('pages.feature'); }
+  
+
+public function evenments()
+{
+    $events = Event::all(); // ou paginate() si tu veux paginer
+    return view('pages.evenments', compact('events'));
+}
+
 
     public function immo() {
         $query = \App\Models\BienImmo::query();
@@ -31,8 +43,10 @@ class PagesController extends Controller
         $bienimmos = $query->get();
         return view('pages.immo', compact('bienimmos'));
     }
-    public function events() { return view('pages.events'); }
-    public function vehicule() { return view('pages.vehicule'); }
+    public function vehicule() {
+        $vehicules = \App\Models\Vehicule::all();
+        return view('pages.vehicule', compact('vehicules'));
+    }
     public function team() { return view('pages.team'); }
     public function testimonial() { return view('pages.testimonial'); }
     public function quote() { return view('pages.quote'); }

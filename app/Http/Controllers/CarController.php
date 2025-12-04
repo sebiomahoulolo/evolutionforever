@@ -36,6 +36,9 @@ class CarController extends Controller
             'immatriculation' => 'required|string|max:255',
             'annee' => 'required|integer|min:1900|max:2099',
             'statut' => 'required|string',
+            'prix' => 'required|numeric|min:0',
+            'type' => 'required|string',
+            'adresse' => 'required|string|max:255',
             'images' => 'required|array|min:6|max:8',
             'images.*' => 'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -55,6 +58,9 @@ class CarController extends Controller
             'immatriculation' => $request->immatriculation,
             'annee' => $request->annee,
             'statut' => $request->statut,
+            'prix' => $request->prix,
+            'type' => $request->type,
+            'adresse' => $request->adresse,
             'photos' => json_encode($photos),
         ]);
         return redirect()->route('admin.cars.index')->with('success', 'Véhicule ajouté avec succès.');

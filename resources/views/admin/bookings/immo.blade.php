@@ -9,6 +9,9 @@
                 <a href="{{ route('admin.bienimmos.create') }}" class="btn btn-primary">
                     <i class="fas fa-plus-circle me-2"></i>Ajouter un bien
                 </a>
+                <a href="{{ route('admin.reservations.index') }}" class="btn btn-primary">
+                    Voir les réservations
+                </a>
             </div>
         </div>
     </div>

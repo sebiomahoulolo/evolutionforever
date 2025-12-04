@@ -3,13 +3,14 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Service de Déménagement - Professionnel et Sécurisé</title>
+    <title>Évolution Forever</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="déménagement, service de déménagement, déménageurs professionnels" name="keywords">
     <meta content="Confiez-nous votre déménagement pour une expérience sereine et sans stress. Services pour particuliers et entreprises." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -149,30 +150,69 @@
                 </div>
                 <div class="col-lg-5">
                     <div class="bg-primary rounded h-100 d-flex align-items-center p-5 wow zoomIn" data-wow-delay="0.9s">
-                        <form>
-                            <div class="row g-3">
-                                <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
-                                </div>
-                                <div class="col-12">
-                                    <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Type de Déménagement</option>
-                                        <option value="1">Résidentiel</option>
-                                        <option value="2">Entreprise</option>
-                                        <option value="3">Autre</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <textarea class="form-control bg-light border-0" rows="3" placeholder="Adresse de départ et d'arrivée, volume estimé..."></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Recevoir mon Devis</button>
-                                </div>
-                            </div>
-                        </form>
+<form method="POST" action="{{ route('demenagement.store') }}">
+    @csrf
+    <div class="row g-3">
+        <!-- Nom -->
+        <div class="col-xl-12">
+            <input type="text" name="nom" class="form-control bg-light border-0" placeholder="Votre Nom" style="height: 55px;">
+        </div>
+
+        <!-- Email -->
+        <div class="col-12">
+            <input type="email" name="email" class="form-control bg-light border-0" placeholder="Votre Email" style="height: 55px;">
+        </div>
+<!-- Téléphone -->
+<div class="col-12">
+    <input type="text" name="telephone" class="form-control bg-light border-0" placeholder="Votre Téléphone" style="height: 55px;">
+</div>
+
+        <!-- Type de déménagement -->
+        <div class="col-12">
+            <select name="type_demenagement" class="form-select bg-light border-0" style="height: 55px;">
+                <option selected disabled>Type de Déménagement</option>
+                <option value="Résidentiel">Résidentiel</option>
+                <option value="Entreprise">Entreprise</option>
+                <option value="Autre">Autre</option>
+            </select>
+        </div>
+
+        <!-- Volume -->
+        <div class="col-12">
+            <select name="volume" class="form-select bg-light border-0" style="height: 55px;">
+                <option selected disabled>Volume à déménager</option>
+                <option value="Petit">Petit</option>
+                <option value="Moyen">Moyen</option>
+                <option value="Grand">Grand</option>
+            </select>
+        </div>
+
+        <!-- Adresse -->
+        <div class="col-12">
+            <textarea name="adresse" class="form-control bg-light border-0" rows="3" placeholder="Adresse de départ et d'arrivée..."></textarea>
+        </div>
+
+        <!-- Besoin d'emballage -->
+        <div class="col-12">
+            <select name="emballage" class="form-select bg-light border-0" style="height: 55px;">
+                <option selected disabled>Besoin d’emballage ou démontage ?</option>
+                <option value="Oui">Oui</option>
+                <option value="Non">Non</option>
+            </select>
+        </div>
+
+        <!-- Date souhaitée -->
+        <div class="col-12">
+            <input type="date" name="date_souhaitee" class="form-control bg-light border-0" style="height: 55px;">
+        </div>
+
+        <!-- Bouton -->
+        <div class="col-12">
+            <button class="btn btn-dark w-100 py-3" type="submit">Recevoir mon Devis</button>
+        </div>
+    </div>
+</form>
+
                     </div>
                 </div>
             </div>

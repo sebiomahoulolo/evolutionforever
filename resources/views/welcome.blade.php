@@ -1,15 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="utf-8">
-    <title>Évoluation Forever</title>
+    <title>Évolution Forever </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+    <meta content="Gestion immobilière, Événementiel, Location de voitures, Pressing, Déménagement" name="keywords">
+    <meta content="Évolution Forever - Votre partenaire multiservices pour la gestion immobilière, l'événementiel, la location de voitures et plus encore." name="description">
 
     <!-- Favicon -->
     <link href="img/favicon.ico" rel="icon">
+    <link rel="icon" href="/img/logo.png" type="image/png">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -40,9 +41,9 @@
                     <img class="w-100" src="img/carousel-1.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn"> Innover pour un avenir meilleur</h1>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Solutions complètes pour vos besoins</h1>
                             <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Devis gratuit</a>
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contact Us</a>
+                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contactez-nous</a>
                         </div>
                     </div>
                 </div>
@@ -50,9 +51,9 @@
                     <img class="w-100" src="img/carousel-2.jpg" alt="Image">
                     <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                         <div class="p-3" style="max-width: 900px;">
-                            <h1 class="display-1 text-white mb-md-4 animated zoomIn"> Innover pour un avenir meilleur</h1>
-                            <a href="quote.html" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Devis gratuit</a>
-                            <a href="" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contactez-nous</a>
+                            <h1 class="display-1 text-white mb-md-4 animated zoomIn">Expertise et professionnalisme</h1>
+                            <a href="{{ route('pages.contact') }}" class="btn btn-primary py-md-3 px-md-5 me-3 animated slideInLeft">Devis gratuit</a>
+                            <a href="{{ route('pages.contact') }}" class="btn btn-outline-light py-md-3 px-md-5 animated slideInRight">Contactez-nous</a>
                         </div>
                     </div>
                 </div>
@@ -60,79 +61,16 @@
             <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
+                <span class="visually-hidden">Précédent</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
+                <span class="visually-hidden">Suivant</span>
             </button>
         </div>
     </div>
     <!-- Navbar & Carousel End -->
-
-
-    <!-- Full Screen Search Start -->
-    <div class="modal fade" id="searchModal" tabindex="-1">
-        <div class="modal-dialog modal-fullscreen">
-            <div class="modal-content" style="background: rgba(9, 30, 62, .7);">
-                <div class="modal-header border-0">
-                    <button type="button" class="btn bg-white btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body d-flex align-items-center justify-content-center">
-                    <div class="input-group" style="max-width: 600px;">
-                        <input type="text" class="form-control bg-transparent border-primary p-3" placeholder="Type search keyword">
-                        <button class="btn btn-primary px-4"><i class="bi bi-search"></i></button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Full Screen Search End -->
-
-
-    <!-- Facts Start -->
-    <div class="container-fluid facts py-5 pt-lg-0">
-        <div class="container py-5 pt-lg-0">
-            <div class="row gx-0">
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.1s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Happy Clients</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="bg-light shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-primary mb-0">Projects Done</h5>
-                            <h1 class="mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="bg-primary shadow d-flex align-items-center justify-content-center p-4" style="height: 150px;">
-                        <div class="bg-white d-flex align-items-center justify-content-center rounded mb-2" style="width: 60px; height: 60px;">
-                            <i class="fa fa-award text-primary"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="text-white mb-0">Win Awards</h5>
-                            <h1 class="text-white mb-0" data-toggle="counter-up">12345</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts Start -->
-
 
     <!-- About Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
@@ -140,35 +78,47 @@
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">About Us</h5>
-                        <h1 class="mb-0">Votre entreprise multiservice avec 8 ans d'espériences</h1>
+                        <h5 class="fw-bold text-primary text-uppercase">Évolution Forever</h5>
+                        <h1 class="mb-0">Votre partenaire multiservices</h1>
                     </div>
-                    <p class="mb-4"> Évolution Forever est une entreprise multiservices spécialisée dans la location de voitures, la gestion immobilière, le pressing et l'événementiel.
-        Nous avons pour mission de vous simplifier la vie grâce à des services efficaces, modernes et accessibles.</p>
-                    <div class="row g-0 mb-3">
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Récompensé</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Personnel professionnel</h5>
-                        </div>
-                        <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Assistance 24h/24 et 7j/7</h5>
-                            <h5 class="mb-3"><i class="fa fa-check text-primary me-3"></i>Prix équitables</h5>
-                        </div>
+                    <p class="mb-4">Évolution Forever est une entreprise spécialisée dans plusieurs domaines clés pour répondre à tous vos besoins :</p>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6"><a href="{{ route('pages.immo') }}">
+                            <h4><i class="fa fa-home text-primary me-3"></i> Gestion Immobilière</h4>
+                            <p>Gestion complète de vos biens locatifs : recrutement de locataires, recouvrement des loyers, location d'appartements meublés ou non.</p>
+                       </a> </div>
+                        <div class="col-md-6"><a href="{{ route('pages.evenments') }}">
+                            <h4><i class="fa fa-calendar-check text-primary me-3"></i> Événementiel</h4>
+                            <p>Location d'accessoires (chaises, tentes, ventilateurs, groupes électrogènes) et organisation complète d'événements.</p>
+                       </a> </div>
                     </div>
-                    <div class="d-flex align-items-center mb-4 wow fadeIn" data-wow-delay="0.6s">
-                        <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
-                            <i class="fa fa-phone-alt text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h5 class="mb-2">Appelez pour poser n'importe quelle question</h5>
-                            <h4 class="text-primary mb-0">+229 0147523655 / 0142317867</h4>
-                        </div>
+                    
+                    <div class="row mb-4">
+                        <div class="col-md-6"><a href="{{ route('vehicule.index') }}">
+                            <h4><i class="fa fa-car text-primary me-3"></i> Location de Voitures</h4>
+                            <p>Parc de véhicules récents adaptés à tous vos besoins de déplacement.</p>
+                        </a></div>
+                        <div class="col-md-6"><a href="{{ route('pages.pressing') }}">
+                            <h4><i class="fa fa-tshirt text-primary me-3"></i> Pressing</h4>
+                            <p>Services de lavage, repassage et nettoyage à sec pour vos vêtements.</p>
+                         </a> </div>
                     </div>
-                    <a href="quote.html" class="btn btn-primary py-3 px-5 mt-3 wow zoomIn" data-wow-delay="0.9s">Demandez un devis</a>
+                    
+                    <div class="row">
+                        <div class="col-md-6"><a href="{{ route('pages.produit') }}">
+                            <h4><i class="fa fa-store text-primary me-3"></i> SOBEBRA</h4>
+                          <p>Vente de tous les produits de la marque SOBEBRA.</p>
+                       </a>   </div>
+                        <div class="col-md-6"><a href="{{ route('pages.demenagement') }}">
+                            <h4><i class="fa fa-truck text-primary me-3"></i> Déménagement</h4>
+                         <p>Service complet pour le transport de vos effets d'un point A à un point B.</p>
+                         </a> </div>
+                    </div>
                 </div>
                 <div class="col-lg-5" style="min-height: 500px;">
                     <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/about.jpg" style="object-fit: cover;">
+                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.9s" src="img/e36c8d6f.jpg" style="object-fit: cover;">
                     </div>
                 </div>
             </div>
@@ -176,169 +126,133 @@
     </div>
     <!-- About End -->
 
-
-    <!-- Features Start -->
+    <!-- Services Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Pourquoi nous choisir</h5>
-                <h1 class="mb-0">Nous sommes là pour vous offrir la meilleure qualité de service possible</h1>
+                <h5 class="fw-bold text-primary text-uppercase">Nos Services</h5>
+                <h1 class="mb-0">Des solutions adaptées à vos besoins</h1>
             </div>
             <div class="row g-5">
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.2s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-cubes text-white"></i>
-                            </div>
-                            <h4>La meilleur de l'industrie</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                <!-- Gestion Immobilière -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-home text-white"></i>
                         </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.6s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-award text-white"></i>
-                            </div>
-                            <h4>Récompensé</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
-                        </div>
+                        <h4 class="mb-3">Gestion Immobilière</h4>
+                        <p class="m-0">Gestion complète de vos biens locatifs avec services professionnels</p>
+                       <img class="w-100" src="img/pexels-kindelmedia.jpg" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('pages.immo') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4  wow zoomIn" data-wow-delay="0.9s" style="min-height: 350px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100 rounded wow zoomIn" data-wow-delay="0.1s" src="img/feature.jpg" style="object-fit: cover;">
+                
+                <!-- Événementiel -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-calendar-alt text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Événementiel</h4>
+                        <p class="m-0">Location de matériel et organisation complète d'événements</p>
+                        <img class="w-100" src="img/b55f.jpg" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('pages.evenments') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="row g-5">
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.4s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-users-cog text-white"></i>
-                            </div>
-                            <h4>Personnel professionnel</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                
+                <!-- Location de Voitures -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-car text-white"></i>
                         </div>
-                        <div class="col-12 wow zoomIn" data-wow-delay="0.8s">
-                            <div class="bg-primary rounded d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                                <i class="fa fa-phone-alt text-white"></i>
-                            </div>
-                            <h4>Assistance 24h/24 et 7    x.7</h4>
-                            <p class="mb-0">Magna sea eos sit dolor, ipsum amet lorem diam dolor eos et diam dolor</p>
+                        <h4 class="mb-3">Location de Voitures</h4>
+                        <p class="m-0">Véhicules récents adaptés à tous vos besoins de transport</p>
+                        <img class="w-100" src="img/OIP.webp" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('vehicule.index') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Pressing -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-tshirt text-white"></i>
                         </div>
+                        <h4 class="mb-3">Pressing</h4>
+                        <p class="m-0">Services professionnels de nettoyage et entretien de vêtements</p>
+                        <img class="w-100" src="img/14.21.46_6672dff6.jpg" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('pages.pressing') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- SOBEBRA -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-store text-white"></i>
+                        </div>
+                        <h4 class="mb-3">SOBEBRA</h4>
+                        <p class="m-0">Vente de tous les produits de la marque SOBEBRA</p>
+                       <img class="w-100" src="img/863343.jpg" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('pages.produit') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Déménagement -->
+                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
+                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
+                        <div class="service-icon">
+                            <i class="fa fa-truck text-white"></i>
+                        </div>
+                        <h4 class="mb-3">Déménagement</h4>
+                        <p class="m-0">Service complet pour le transport de vos effets personnels</p>
+                        <img class="w-100" src="img/b3da10.jpg" alt="Image">
+                        <a class="btn btn-lg btn-primary rounded" href="{{ route('pages.demenagement') }}">
+                            <i class="bi bi-arrow-right"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Features Start -->
+    <!-- Services End -->
 
-
-    <!-- Service Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-5 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Our Services</h5>
-                <h1 class="mb-0">Custom IT Solutions for Your Successful Business</h1>
-            </div>
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-shield-alt text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Cyber Security</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-chart-pie text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Data Analytics</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-code text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Web Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.3s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fab fa-android text-white"></i>
-                        </div>
-                        <h4 class="mb-3">Apps Development</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.6s">
-                    <div class="service-item bg-light rounded d-flex flex-column align-items-center justify-content-center text-center">
-                        <div class="service-icon">
-                            <i class="fa fa-search text-white"></i>
-                        </div>
-                        <h4 class="mb-3">SEO Optimization</h4>
-                        <p class="m-0">Amet justo dolor lorem kasd amet magna sea stet eos vero lorem ipsum dolore sed</p>
-                        <a class="btn btn-lg btn-primary rounded" href="">
-                            <i class="bi bi-arrow-right"></i>
-                        </a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 wow zoomIn" data-wow-delay="0.9s">
-                    <div class="position-relative bg-primary rounded h-100 d-flex flex-column align-items-center justify-content-center text-center p-5">
-                        <h3 class="text-white mb-3">Call Us For Quote</h3>
-                        <p class="text-white mb-3">Clita ipsum magna kasd rebum at ipsum amet dolor justo dolor est magna stet eirmod</p>
-                        <h2 class="text-white mb-0">+012 345 6789</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-
-
-    <!-- Quote Start -->
+    <!-- Contact Start -->
     <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container py-5">
             <div class="row g-5">
                 <div class="col-lg-7">
                     <div class="section-title position-relative pb-3 mb-5">
-                        <h5 class="fw-bold text-primary text-uppercase">Request A Quote</h5>
-                        <h1 class="mb-0">Need A Free Quote? Please Feel Free to Contact Us</h1>
+                        <h5 class="fw-bold text-primary text-uppercase">Contactez-nous</h5>
+                        <h1 class="mb-0">Besoin d'un service ? N'hésitez pas à nous contacter</h1>
                     </div>
                     <div class="row gx-3">
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.2s">
-                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Reply within 24 hours</h5>
+                            <h5 class="mb-4"><i class="fa fa-reply text-primary me-3"></i>Réponse sous 24h</h5>
                         </div>
                         <div class="col-sm-6 wow zoomIn" data-wow-delay="0.4s">
-                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>24 hrs telephone support</h5>
+                            <h5 class="mb-4"><i class="fa fa-phone-alt text-primary me-3"></i>Assistance 24h/24</h5>
                         </div>
                     </div>
-                    <p class="mb-4">Eirmod sed tempor lorem ut dolores. Aliquyam sit sadipscing kasd ipsum. Dolor ea et dolore et at sea ea at dolor, justo ipsum duo rebum sea invidunt voluptua. Eos vero eos vero ea et dolore eirmod et. Dolores diam duo invidunt lorem. Elitr ut dolores magna sit. Sea dolore sanctus sed et. Takimata takimata sanctus sed.</p>
+                    <p class="mb-4">Notre équipe est à votre disposition pour répondre à toutes vos questions et vous proposer les meilleures solutions adaptées à vos besoins.</p>
                     <div class="d-flex align-items-center mt-2 wow zoomIn" data-wow-delay="0.6s">
                         <div class="bg-primary d-flex align-items-center justify-content-center rounded" style="width: 60px; height: 60px;">
                             <i class="fa fa-phone-alt text-white"></i>
                         </div>
                         <div class="ps-4">
-                            <h5 class="mb-2">Call to ask any question</h5>
-                            <h4 class="text-primary mb-0">+012 345 6789</h4>
+                            <h5 class="mb-2">Appelez-nous pour toute question</h5>
+                            <h4 class="text-primary mb-0">+229 0147523655 / 0142317867</h4>
                         </div>
                     </div>
                 </div>
@@ -347,24 +261,27 @@
                         <form>
                             <div class="row g-3">
                                 <div class="col-xl-12">
-                                    <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                                    <input type="text" class="form-control bg-light border-0" placeholder="Votre nom" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
-                                    <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                                    <input type="email" class="form-control bg-light border-0" placeholder="Votre email" style="height: 55px;">
                                 </div>
                                 <div class="col-12">
                                     <select class="form-select bg-light border-0" style="height: 55px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 2</option>
-                                        <option value="3">Service 3</option>
+                                        <option selected>Sélectionnez un service</option>
+                                        <option value="1">Gestion Immobilière</option>
+                                        <option value="2">Événementiel</option>
+                                        <option value="3">Location de Voitures</option>
+                                        <option value="4">Pressing</option>
+                                        <option value="5">SOBEBRA</option>
+                                        <option value="6">Déménagement</option>
                                     </select>
                                 </div>
                                 <div class="col-12">
                                     <textarea class="form-control bg-light border-0" rows="3" placeholder="Message"></textarea>
                                 </div>
                                 <div class="col-12">
-                                    <button class="btn btn-dark w-100 py-3" type="submit">Request A Quote</button>
+                                    <button class="btn btn-dark w-100 py-3" type="submit">Envoyer la demande</button>
                                 </div>
                             </div>
                         </form>
@@ -373,78 +290,12 @@
             </div>
         </div>
     </div>
-    <!-- Quote End -->
+    <!-- Contact End -->
 
-
-    <!-- Testimonial Start -->
-    <div class="container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="section-title text-center position-relative pb-3 mb-4 mx-auto" style="max-width: 600px;">
-                <h5 class="fw-bold text-primary text-uppercase">Testimonial</h5>
-                <h1 class="mb-0">What Our Clients Say About Our Digital Services</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.6s">
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-1.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-2.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-3.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-                <div class="testimonial-item bg-light my-4">
-                    <div class="d-flex align-items-center border-bottom pt-5 pb-4 px-5">
-                        <img class="img-fluid rounded" src="img/testimonial-4.jpg" style="width: 60px; height: 60px;" >
-                        <div class="ps-4">
-                            <h4 class="text-primary mb-1">Client Name</h4>
-                            <small class="text-uppercase">Profession</small>
-                        </div>
-                    </div>
-                    <div class="pt-4 pb-5 px-5">
-                        Dolor et eos labore, stet justo sed est sed. Diam sed sed dolor stet amet eirmod eos labore diam
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-
-
-
-
-   @include('components.footer')
+    @include('components.footer')
 
     <!-- Back to Top -->
     <a href="#" class="btn btn-lg btn-primary btn-lg-square rounded back-to-top"><i class="bi bi-arrow-up"></i></a>
-
 
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
